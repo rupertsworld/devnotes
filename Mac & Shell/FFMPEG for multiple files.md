@@ -1,0 +1,1 @@
+`find . -name "\*.m4a" -exec ffmpeg -i {} {}.mp3 \\;`

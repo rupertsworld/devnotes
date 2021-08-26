@@ -1,0 +1,4 @@
+# Fixing slow smart mailboxes in Mac Mail
+> I searched the Net and found a remedy: to re-index my entire hard drive in Spotlight. Full instructions are in  [https://support.apple.com/en-us/HT201716](https://support.apple.com/en-us/HT201716) . In essence, Syst. Prefs. > Spotlight > Privacy, drag HD into window, wait a few seconds and remove it again by clicking ‘–‘, then let Spotlight do its work, which can take a long time; in the case of my Mac (Mojave) with HD capacity 479.89 GB, about 3/4 used, it took less than an hour, though.
+
+– [Apple Forums](https://discussions.apple.com/thread/251167294)

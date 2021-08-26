@@ -1,0 +1,1 @@
+- Use the `vercel dev` command to start a dev server that includes the APIs ([docs](https://vercel.com/blog/vercel-dev))

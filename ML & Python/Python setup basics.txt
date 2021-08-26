@@ -1,0 +1,7 @@
+# Python setup basics
+
+Use `Pipenv` instead of `venv` now ([link](https://pipenv-fork.readthedocs.io/en/latest/basics.html)).
+
+```python
+pipenv install [packagename]
+``` 

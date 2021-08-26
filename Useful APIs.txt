@@ -1,0 +1,5 @@
+# List of useful APIs
+
+## Literature & Journalism
+
+* [New York Times article search](https://developer.nytimes.com/docs/articlesearch-product/1/overview)

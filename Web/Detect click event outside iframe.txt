@@ -1,0 +1,33 @@
+# Detect click events between iframes
+
+Running from an outer iframe, detecting click on an inner one:
+
+```js
+var myConfObj = {
+  iframeMouseOver : false
+}
+
+window.addEventListener('blur',function(){
+  if(myConfObj.iframeMouseOver){
+    console.log('Wow! Iframe Click!');
+  }
+});
+
+document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseover',function(){
+   myConfObj.iframeMouseOver = true;
+});
+
+document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseout',function(){
+    myConfObj.iframeMouseOver = false;
+});
+```
+
+Via [Gist](https://gist.github.com/jaydson/1780598)
+
+If going the other way around, it's a bit harder. Here's a hack – note it will also fire if you just blur the window.
+
+```js
+window.addEventListener('blur', () => {
+  console.log('Blur!')
+})
+```

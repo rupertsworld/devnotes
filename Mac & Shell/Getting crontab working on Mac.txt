@@ -1,0 +1,17 @@
+# Getting crontab working on Mac
+Add full disk access to both the Terminal app and Cron (see below, and this [Stack Overflow](https://stackoverflow.com/questions/59123499/crontab-is-not-running-local-bin-script-catalina-bigsur))
+
+> To solve it, just add your cron location (in most cases /usr/sbin/cron) to the **Full Disk Access** lists located at System Preferences.app -> Security & Privacy -> Privacy -> Full Disk Access. “Click the lock to make changes” and “+” to navigate to your cron location.
+
+1. `$ open /usr/` in terminal of your choice
+2. drag sbin folder to the side bar (a.k.a. Favorites)
+3. back to the file locator in **System Preferences.app**
+4. now you should know what to do next
+
+There’s also an app called “Power Manager” that might be able to help.
+
+In the end, I had to add a path var as well:
+
+```
+PATH=$PATH:/usr/local/bin /bin/bash ${HOME}/Documents/Other\ Files    /Computer\ Bits/Bear\ Tools/sync_bear.sh
+```

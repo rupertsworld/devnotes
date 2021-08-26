@@ -1,0 +1,10 @@
+# Get image data from clipboard
+
+```js
+const item = (await navigator.clipboard.read())[0];
+const [type] = item.types.filter(type => ['image/png', 'image/jpeg', 'image/gif'].includes(type));
+const initialData = await item.getType(type);
+const reader = new FileReader();
+reader.onload = () => setData(reader.result);
+reader.readAsDataURL(initialData);
+```
